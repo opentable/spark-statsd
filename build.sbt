@@ -5,9 +5,9 @@ version := "1.0.0"
 
 organization := "spark.metrics"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.11.8"
 
-sparkVersion := "1.5.2"
+sparkVersion := "2.0.0"
 
 //sparkComponents += "core"
 
@@ -23,6 +23,8 @@ licenses += "Apache-2.0" -> url("http://opensource.org/licenses/Apache-2.0")
 spAppendScalaVersion := true
 
 spIncludeMaven := true
+
+autoScalaLibrary := false
 
 credentials += Credentials(Path.userHome / ".ivy2" / ".sbtcredentials")
 
