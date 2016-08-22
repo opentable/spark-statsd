@@ -79,3 +79,8 @@ pomExtra := (
       <url>https://github.com/vidhyaarvind</url>
     </developer>
   </developers>)
+
+assemblyExcludedJars in assembly := { 
+  val cp = (fullClasspath in assembly).value
+  cp filter {_.data.getName == "slf4j-api-1.7.5.jar"}
+}
